@@ -1,15 +1,15 @@
 import React from 'react';
-//import Login from './components/Login'
+import Form from './components/FormContainer'
 import './App.css';
 import Button from './components/Button'
 
 function App() {
   return (
     <div className="container">
-        <Button/> 
+        <Form/> 
     </div>
       
   );
 }
 
-export default App;
+export default App
