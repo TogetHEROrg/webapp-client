@@ -8,8 +8,8 @@ import Button from './components/Button'
 
 const App = () => {
   return <Router>
-    <Route path="/" exact component={Button}/>
-    <Route path="/login" exact component={Form}/>
+    <Route path="/buttons" exact component={Button}/>
+    <Route path="/" exact component={Form}/>
   </Router>
 
       
