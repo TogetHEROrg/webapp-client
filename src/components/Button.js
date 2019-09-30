@@ -5,7 +5,9 @@ import speaker from '../Images/megaphone.png'
 
 import "../Button.css"
 import axios from 'axios';
+
 class Button extends React.Component {
+  
     handleDenuncia() {
         axios.post('http://localhost:3001/alert').then(res => console.log(res)).catch(err => console.log(err))
     }
@@ -14,14 +16,15 @@ class Button extends React.Component {
     }
     render() {
         return (
-            <div className="buttons-alarm">
-                <div onClick={this.handleEmergencia}>
+            <div>
+                <h1>Plurales</h1>
+                <button className="btn buttons-emergencia" onClick={this.handleEmergencia}>
                     <img src={phoneCall} />
-                </div>
+                </button>
                 <br/>
-                <div onClick={this.handleDenuncia}>
+                <button className="btn buttons-denuncia" onClick={this.handleDenuncia}>
                     <img src={speaker} />
-                </div>
+                </button>
 
             </div>
         )

@@ -3,8 +3,17 @@ import '../Login.css'
 import axios from 'axios'
 import FormComponent from './FormComponent.js'
 
+import M from "materialize-css";
+import 'materialize-css/dist/css/materialize.min.css';
 
 class Form extends Component {
+
+    componentDidMount() {
+
+        M.AutoInit();
+    
+    }
+
     constructor() {
         super()
         this.state = {
