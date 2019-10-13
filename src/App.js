@@ -1,20 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router, Route} from "react-router-dom";
-import './App.css';
+import React from 'react'
+import './App.css'
 
-//Pages
-import Login from './components/FormContainer'
-import Button from './components/Button'
+import Login from './Login'
+import Buttons from './Buttons'
+
+import { BrowserRouter as Router, Route} from "react-router-dom"
 
 const App = () => {
   return <Router>
-    <Route path="/" exact component={Login}/>
-    <Route path="/buttons" exact component={Button}/>
-    
-  </Router>
-
-      
-
+      <Route path="/" exact component={Login} />
+      <Route path="/Buttons" exact component={Buttons} />
+    </Router>
 }
 
 export default App

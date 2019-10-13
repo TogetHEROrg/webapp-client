@@ -1,9 +1,8 @@
 import React from 'react'
-import phoneCall from '../Images/phone.png'
+import phone from './phone.png'
+import speaker from './megaphone.png'
 
-import speaker from '../Images/megaphone.png'
-
-import "../Button.css"
+import "./Buttons.css"
 import axios from 'axios';
 
 class Button extends React.Component {
@@ -17,13 +16,16 @@ class Button extends React.Component {
     render() {
         return (
             <div>
-                <h1>Plurales</h1>
+                <button className="buttons-out">
+                    X
+                </button>
+                <br/>
                 <button className="btn buttons-emergencia" onClick={this.handleEmergencia}>
-                    <img src={phoneCall} />
+                    <img src={phone} alt="Emergencia"/>
                 </button>
                 <br/>
                 <button className="btn buttons-denuncia" onClick={this.handleDenuncia}>
-                    <img src={speaker} />
+                    <img src={speaker} alt="Denuncia"/>
                 </button>
 
             </div>
