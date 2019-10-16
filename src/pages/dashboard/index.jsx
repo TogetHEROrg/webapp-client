@@ -80,11 +80,11 @@ const Dashboard = ({ signOut }) => {
 
       <div className="container">
         <button className="btn buttons-emergencia" onClick={handleReport}>
-          <img src={phoneImage} alt="Emergencia" />
+          <img className="btn-img" src={phoneImage} alt="Emergencia" />
         </button>
         <br />
         <button className="btn buttons-denuncia" onClick={handleEmergency}>
-          <img src={speakerImage} alt="Denuncia" />
+          <img className="btn-img" src={speakerImage} alt="Denuncia" />
         </button>
       </div>
 
