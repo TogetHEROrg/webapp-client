@@ -79,11 +79,11 @@ const Dashboard = ({ signOut }) => {
       <a href="tel:144" className="phone" ref={aEl} />
 
       <div className="container">
-        <button className="btn buttons-emergencia" onClick={handleEmergency}>
+        <button className="btn buttons-emergencia" onClick={handleReport}>
           <img src={phoneImage} alt="Emergencia" />
         </button>
         <br />
-        <button className="btn buttons-denuncia" onClick={handleReport}>
+        <button className="btn buttons-denuncia" onClick={handleEmergency}>
           <img src={speakerImage} alt="Denuncia" />
         </button>
       </div>
