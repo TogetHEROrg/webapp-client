@@ -5,12 +5,12 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="logo192.png" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -40,42 +40,39 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-   <!-- update the version number as needed -->
-   <script defer src="/__/firebase/7.2.0/firebase-app.js"></script>
-   <!-- include only the Firebase features as you need -->
-   <script defer src="/__/firebase/7.2.0/firebase-auth.js"></script>
-   <script defer src="/__/firebase/7.2.0/firebase-database.js"></script>
-   <script defer src="/__/firebase/7.2.0/firebase-messaging.js"></script>
-   <script defer src="/__/firebase/7.2.0/firebase-storage.js"></script>
-   <!-- initialize the SDK after all desired features are loaded -->
-   <script defer src="/__/firebase/init.js"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.2.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.2.0/firebase-auth.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 
-   <script>
-     document.addEventListener("DOMContentLoaded", function() {
-       // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-       // // The Firebase SDK is initialized and available here!
-       //
-       // firebase.auth().onAuthStateChanged(user => { });
-       // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-       // firebase.messaging().requestPermission().then(() => { });
-       // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-       //
-       // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-       try {
-         let app = firebase.app();
-         let features = ["auth", "database", "messaging", "storage"].filter(
-           feature => typeof app[feature] === "function"
-         );
-         document.getElementById(
-           "load"
-         ).innerHTML = `Firebase SDK loaded with ${features.join(", ")}`;
-       } catch (e) {
-         console.error(e);
-         document.getElementById("load").innerHTML =
-           "Error loading the Firebase SDK, check the console.";
-       }
-     });
-   </script>
- </body>
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(
+            feature => typeof app[feature] === 'function',
+          );
+          document.getElementById(
+            'load',
+          ).innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML =
+            'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>

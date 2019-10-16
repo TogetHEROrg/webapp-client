@@ -1,0 +1,8 @@
+{
+  "name": "plurales-app-client",
+  "version": 2,
+  "alias": [
+    "plurales-app-client"
+  ],
+  "scope": "plurales"
+}

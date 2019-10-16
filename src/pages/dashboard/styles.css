@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 56px);
+}
+
+.btn {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.buttons-out {
+  border-radius: 50%;
+}
+
+.buttons-emergencia {
+  background-color: #da6518;
+}
+
+.buttons-denuncia {
+  background-color: #dacd18;
+}
+
+img {
+  width: 60%;
+}
+
+.text {
+  text-align: center;
+  font-size: 30px;
+}
