@@ -11,20 +11,21 @@ import M from 'materialize-css';
 import speakerImage from '../../assets/megaphone_img.png';
 import phoneImage from '../../assets/phone_img.png';
 
-const Dashboard = ({ signOut }) => {
+const Dashboard = ({ signOut, user }) => {
   const aEl = useRef(null);
   const db = firebase.firestore();
 
   db.settings({
     timestampsInSnapshots: true,
   });
-
+  
   const handleEmergency = () => {
     db.collection('reclamos')
       .add({
         date: new Date(),
         description: 'Contaminación Ambiental',
         tipo: 'contaminacion_ambiental',
+        userId: user.uid
       })
       .then(() => {
         M.toast({
@@ -47,6 +48,7 @@ const Dashboard = ({ signOut }) => {
         date: new Date(),
         description: 'Violencia de Genero',
         tipo: 'violencia_genero',
+        userId: user.uid
       })
       .then(() => {
         M.toast({
