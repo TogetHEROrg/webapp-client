@@ -18,14 +18,15 @@ const Dashboard = ({ signOut, user }) => {
   db.settings({
     timestampsInSnapshots: true,
   });
-  
+
   const handleEmergency = () => {
     db.collection('reclamos')
       .add({
         date: new Date(),
         description: 'Contaminación Ambiental',
         tipo: 'contaminacion_ambiental',
-        userId: user.uid
+        userId: user.uid,
+        userEmail: user.email,
       })
       .then(() => {
         M.toast({
@@ -48,7 +49,8 @@ const Dashboard = ({ signOut, user }) => {
         date: new Date(),
         description: 'Violencia de Genero',
         tipo: 'violencia_genero',
-        userId: user.uid
+        userId: user.uid,
+        userEmail: user.email,
       })
       .then(() => {
         M.toast({
