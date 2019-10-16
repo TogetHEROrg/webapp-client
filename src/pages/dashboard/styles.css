@@ -33,3 +33,7 @@ img {
   text-align: center;
   font-size: 30px;
 }
+
+.phone {
+  display: none;
+}
